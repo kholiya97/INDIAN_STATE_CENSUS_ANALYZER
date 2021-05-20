@@ -82,6 +82,11 @@ namespace INDIAN_STATE_CENSUS_ANALYZER
             dataMap = new CSVAdapterFactory().LoadCsvData(country, csvFilePath, dataHeaders);
             return dataMap;
         }
+
+        public void LoadCensusData(Country iNDIA, object delimeterIndianCensusCodeFilePath, string indianStateCensusHeaders)
+        {
+            throw new NotImplementedException();
+        }
     }
     public class CSVAdapterFactory
     {
@@ -136,7 +141,7 @@ namespace INDIAN_STATE_CENSUS_ANALYZER
             return dataMap.ToDictionary(p => p.Key, p => p.Value);
            
         }
-        Console.ReadLine();
+       
     }
   
 
@@ -147,6 +152,7 @@ namespace INDIAN_STATE_CENSUS_ANALYZER
             Console.WriteLine("**************Welcome To Indian State Census Analyser******************");
             Console.Read();
         }
+
     }
 }
 
